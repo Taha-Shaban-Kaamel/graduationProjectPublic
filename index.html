@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+ 
+    <h1 onclick="toggle()" style="cursor: pointer;">menu</h1>
+    <ul class="menu" style="display: none;">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+    <script>  
+        let indecator = false;
+        function toggle(){
+        let menu = document.querySelector('.menu');
+
+            indecator = !indecator;
+            if(indecator){
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
